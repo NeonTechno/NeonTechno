@@ -1,7 +1,7 @@
-- 👋 Hi, I’m @NeonTechno
+- 👋🏾 Hi, I’m @NeonTechno
 - 👀 I’m interested in gaming🎮, cloud and quantum computing💻, and blockchain technology⛓.
 - 🌱 I’m currently learning blockchain development, 3D animation, robotics, cybersecurity, and software development.
-- 💞️ I’m looking to collaborate on innovative projects cause I have a lot in mind too lol ^ ^
+- 💪🏾 I’m looking to collaborate on innovative projects cause I have a lot in mind too lol ^ ^
   
 
 <!---
