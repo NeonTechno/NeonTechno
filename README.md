@@ -1,15 +1,11 @@
 <div align="center">
 
-<!-- ═══════════════════════════════════════════════════════════
-     HERO — The entrance. Kente colors. NeonTechnoX.
-════════════════════════════════════════════════════════════ -->
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:FFD700,25:E63946,50:228B22,75:00bfff,100:a855f7&height=230&section=header&text=NeonTechnoX&fontSize=70&fontColor=ffffff&fontAlignY=40&desc=Building%20Africa%27s%20Digital%20Future%20%F0%9F%8C%8D%E2%9A%A1&descAlignY=62&descSize=20" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:FFD700,25:E63946,50:228B22,75:00bfff,100:a855f7&height=230&section=header&text=NeonTechnoX&fontSize=70&fontColor=ffffff&fontAlignY=40&desc=Building%20Africa%27s%20Digital%20Future%20%E2%80%94%20Yeb%C9%94a%20y%C9%9B%E2%9C%A6&descAlignY=62&descSize=18" width="100%"/>
 
 <br/>
 
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&pause=1000&color=FFD700&center=true&vCenter=true&width=750&lines=Computer+Scientist+%F0%9F%87%AC%F0%9F%87%AD;Blockchain+Architect+%E2%9B%93;Robotics+Engineer+%F0%9F%A4%96;Cybersecurity+Enthusiast+%F0%9F%94%90;Post-Quantum+Cryptographer+%F0%9F%94%91;Building+DRP+%E2%80%94+Decentralized+Rights+Protocol;From+Cape+Coast+to+the+World+%F0%9F%8F%B0" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&pause=1000&color=FFD700&center=true&vCenter=true&width=750&lines=Computer+Scientist+%7C+Ghana+%F0%9F%87%AC%F0%9F%87%AD;Blockchain+Architect+%E2%8A%95+DRP;Robotics+Engineer+%E2%9C%A6+UCC+Season+2025;Cybersecurity+%26+Post-Quantum+Cryptographer;%E2%98%A5+Gye+Nyame+%E2%80%94+Except+Code%2C+Nothing+Stops+Me;From+Cape+Coast+to+the+World" alt="Typing SVG" />
 </a>
 
 <br/><br/>
@@ -20,47 +16,49 @@
 
 </div>
 
-<!-- ▓▓▓ KENTE DIVIDER 1 — Gold/Red/Green/Black ▓▓▓ -->
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:FFD700,16:FFD700,16:E63946,33:E63946,33:228B22,50:228B22,50:1a1a1a,66:1a1a1a,66:00bfff,83:00bfff,83:a855f7,100:a855f7&height=8&section=header" width="100%"/>
+<!-- ▓ KENTE DIVIDER ▓ -->
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:FFD700,16:FFD700,16:E63946,33:E63946,33:228B22,50:228B22,50:1a1a1a,66:1a1a1a,66:00bfff,83:00bfff,83:a855f7,100:a855f7&height=8" width="100%"/>
 
 ---
 
 <div align="center">
 
-## 🌍 Chapter I — Who Is NeonTechnoX?
+## ☥ Ɔkyena Biara — Chapter I · Hwan Na Me Ne?
+*( Who Am I? )*
 
-</div>
+<img src="https://readme-typing-svg.demolab.com?font=Georgia&weight=400&size=18&pause=2000&color=FFD700&center=true&vCenter=true&width=720&lines=%22Nyansa+ne+hu+na+eye+%C9%94barima%22+%E2%80%94+Wisdom+and+vision+make+the+man." alt="Twi proverb"/>
 
-<div align="center">
-<img src="https://readme-typing-svg.demolab.com?font=Georgia&weight=400&size=18&pause=2000&color=FFD700&center=true&vCenter=true&width=700&lines=%22Technology+is+the+new+Ubuntu+%E2%80%94+I+am+because+we+code.%22" alt="quote"/>
 </div>
 
 <br/>
 
-I'm **Nkrumah Joel** aka **NeonTechnoX** — a Computer Science student at the **University of Cape Coast, Ghana 🇬🇭**.
+Me din de **Nkrumah Joel** — me te **University of Cape Coast, Ghana** ase, me yɛ **NeonTechnoX**. *(My name is Nkrumah Joel — I study at UCC, Ghana, I am NeonTechnoX.)*
 
-I'm the lead architect of the **Decentralized Rights Protocol (DRP)** — a blockchain system built to protect digital identity and human rights across Africa and beyond. I also captain the **Robotics UCC Team Season 2025**, building autonomous machines that represent Ghana on the field.
+I'm the lead architect of the **Decentralized Rights Protocol (DRP)** — a blockchain system forged to protect digital identity and human rights, beginning with Africa. I also captain the **Robotics UCC Team — Season 2025**, building autonomous machines that carry Ghana's flag.
 
-I was born in the land of **Kente** 🟨🟥🟩 — where every thread in the cloth tells a story, every color carries meaning:
+I was born in the land of **Kente** — where every thread tells a story, every color carries a name. Here's mine:
 
-| Kente Color | Meaning | My Code |
-|:-----------:|:-------:|:-------:|
-| 🟨 **Gold** | Royalty · Wealth · High Quality | `$RIGHTS` governance token |
-| 🟥 **Red** | Strength · Political Power | Post-Quantum Security |
-| 🟩 **Green** | Growth · Renewal · Nature | DRP — growing Africa's future |
-| ⬛ **Black** | Maturity · Spiritual Energy | The blockchain — immutable truth |
-| 🟦 **Blue** | Harmony · Peace · Love | Open-source, for everyone |
+| Adinkra | Symbol | Meaning | What I Build |
+|:-------:|:------:|:-------:|:------------:|
+| **Gye Nyame** | ☥ | Supremacy — nothing greater | DRP — above all, rights first |
+| **Sankofa** | ✦ | Return & learn from the past | Post-quantum: don't repeat history's mistakes |
+| **Dwennimmen** | ❖ | Strength with humility | Open-source — power for everyone |
+| **Aya** | ⟁ | Endurance — the fern survives | Ghana-first launch. We persist. |
+| **Adinkrahene** | ⊕ | Greatness · Leadership · Charisma | DRP $RIGHTS — governance token |
+| **Hye Won Hye** | ∞ | That which does not burn | Immutable blockchain — forever on-chain |
 
-> *Just like the Kente weaver, I don't write single lines — I weave systems.*
+> *⊕ "Onipa na ɔhyɛ onipa kwan" — It is a person who shows another person the way.*
+> *NeonTechnoX is showing Africa the way through code.*
 
-<!-- ▓▓▓ KENTE DIVIDER 2 ▓▓▓ -->
+<!-- ▓ KENTE DIVIDER ▓ -->
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:1a1a1a,12:FFD700,25:E63946,37:228B22,50:FFD700,62:E63946,75:228B22,87:1a1a1a,100:00bfff&height=8" width="100%"/>
 
 ---
 
 <div align="center">
 
-## ⚡ Chapter II — What I'm Weaving
+## ⊕ Adwuma — Chapter II · Dɛn Na Mereyɛ?
+*( What Am I Building? )*
 
 </div>
 
@@ -68,78 +66,88 @@ I was born in the land of **Kente** 🟨🟥🟩 — where every thread in the c
 <tr>
 <td width="50%" valign="top">
 
-### 🔗 Decentralized Rights Protocol (DRP)
+### ∞ Decentralized Rights Protocol (DRP)
+*Hye Won Hye — that which does not burn*
+
 A next-gen blockchain protocol for **digital identity, rights management & asset recovery** — built for Africa, designed for the world.
 
 ```yaml
 Tokens:
-  $RIGHTS → governance token
-  $DeRi   → utility token
+  $RIGHTS → governance token  (⊕ Adinkrahene)
+  $DeRi   → utility token     (❖ Dwennimmen)
 
 Security:
-  CRYSTALS-Kyber  (encryption)
-  CRYSTALS-Dilithium (signatures)
-  → Post-Quantum ready 🔐
+  CRYSTALS-Kyber     → encryption
+  CRYSTALS-Dilithium → signatures
+  Post-Quantum ready ∞
 
 Storage:
   OrbitDB + IPFS (decentralized)
 
 Special Modules:
-  AI Elders        → governance AI
-  Project Lazarus  → cross-chain recovery
-                     + digital testaments
+  AI Elders       → governance AI    (☥ Gye Nyame)
+  Project Lazarus → cross-chain recovery
+                    + digital testaments
 
-Status: 🔨 Building → Testnet
-        Ghana launches first 🇬🇭
+Status:
+  Reyɛ adwuma → Testnet
+  Ghana na edi kan  (Ghana goes first)
 ```
 
 </td>
 <td width="50%" valign="top">
 
-### 🤖 Robotics UCC — Season 2025
-Leading Ghana's next-gen robotics engineers at UCC. Autonomous systems, real hardware, competing for the continent.
+### ✦ Robotics UCC — Season 2025
+*Sankofa — learn, build, move forward*
+
+Leading Ghana's next-gen robotics engineers. Autonomous systems, real hardware, competing for the continent.
 
 ```
 Hardware:  L298N · TT Gear Motors
 Stack:     C++ · Embedded Systems
-Mission:   Put Ghana on the robotics map 🗺️
+Motto:     Yɛbɛdi kan! (We will win!)
 ```
 
-### 🛡️ Network Diagnostics App
-Born from a real Zoom failure. Local AI rule engine — no external API calls. Android (Kotlin) + PC (Python).
+### ❖ Network Diagnostics App
+*Dwennimmen — strength from within*
+
+Born from a real Zoom failure. Local AI rule engine — no cloud, no external API calls.
 
 ```
-Platform:  Android Studio + Python
-Engine:    Local rule-based AI
-Zero deps: No cloud. Pure logic. ⚡
+Android (Kotlin) + PC (Python)
+Engine: Local rule-based AI
+        Adwuma pa — good work, pure logic
 ```
 
-### 🔐 Text-Decryption Toolkit
-Classical & modern ciphers — Playfair, Vigenère, Rail Fence, Polybius, Beaufort, Bacon + hash analysis.
+### ⟁ Text-Decryption Toolkit
+*Aya — endurance, resourcefulness*
+
+Playfair · Vigenère · Rail Fence · Polybius · Beaufort · Bacon · Hash analysis — growing daily.
 
 </td>
 </tr>
 </table>
 
-<!-- ▓▓▓ KENTE DIVIDER 3 ▓▓▓ -->
+<!-- ▓ KENTE DIVIDER ▓ -->
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:a855f7,14:00bfff,28:228B22,42:FFD700,56:E63946,70:1a1a1a,84:FFD700,100:a855f7&height=8" width="100%"/>
 
 ---
 
 <div align="center">
 
-## 🧰 Chapter III — The Arsenal
+## ❖ Ahoɔden — Chapter III · M'Adeɛ Nyinaa
+*( My Full Arsenal )*
 
-**⌨️ Languages**
+**⌨️ Kasa — Languages**
 
 ![Python](https://img.shields.io/badge/Python-FFD700?style=for-the-badge&logo=python&logoColor=1a1a1a)
 ![C++](https://img.shields.io/badge/C++-E63946?style=for-the-badge&logo=cplusplus&logoColor=ffffff)
 ![Kotlin](https://img.shields.io/badge/Kotlin-a855f7?style=for-the-badge&logo=kotlin&logoColor=ffffff)
 ![JavaScript](https://img.shields.io/badge/JavaScript-228B22?style=for-the-badge&logo=javascript&logoColor=ffffff)
 ![Solidity](https://img.shields.io/badge/Solidity-00bfff?style=for-the-badge&logo=solidity&logoColor=1a1a1a)
-![Go](https://img.shields.io/badge/Go-00bfff?style=for-the-badge&logo=go&logoColor=1a1a1a)
+![Go](https://img.shields.io/badge/Go-FFD700?style=for-the-badge&logo=go&logoColor=1a1a1a)
 
-**⛓️ Blockchain & Web3**
+**∞ Blockchain & Web3**
 
 ![Cosmos SDK](https://img.shields.io/badge/Cosmos_SDK-a855f7?style=for-the-badge&logo=cosmos&logoColor=ffffff)
 ![IPFS](https://img.shields.io/badge/IPFS-228B22?style=for-the-badge&logo=ipfs&logoColor=ffffff)
@@ -147,7 +155,7 @@ Classical & modern ciphers — Playfair, Vigenère, Rail Fence, Polybius, Beaufo
 ![FastAPI](https://img.shields.io/badge/FastAPI-228B22?style=for-the-badge&logo=fastapi&logoColor=ffffff)
 ![Web3.js](https://img.shields.io/badge/Web3.js-FFD700?style=for-the-badge&logo=web3dotjs&logoColor=1a1a1a)
 
-**🛠️ Tools & Platforms**
+**⊕ Adwumayɛfo — Tools & Platforms**
 
 ![GitHub](https://img.shields.io/badge/GitHub-1a1a1a?style=for-the-badge&logo=github&logoColor=FFD700)
 ![Android Studio](https://img.shields.io/badge/Android_Studio-228B22?style=for-the-badge&logo=androidstudio&logoColor=ffffff)
@@ -158,14 +166,15 @@ Classical & modern ciphers — Playfair, Vigenère, Rail Fence, Polybius, Beaufo
 
 </div>
 
-<!-- ▓▓▓ KENTE DIVIDER 4 ▓▓▓ -->
+<!-- ▓ KENTE DIVIDER ▓ -->
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:228B22,20:FFD700,40:E63946,60:1a1a1a,80:a855f7,100:228B22&height=8" width="100%"/>
 
 ---
 
 <div align="center">
 
-## 📊 Chapter IV — The Numbers
+## ⟁ Akontabuo — Chapter IV · Nhyehyɛe
+*( The Numbers · The Record )*
 
 <img height="175em" src="https://github-readme-stats.vercel.app/api?username=NeonTechno&show_icons=true&bg_color=0D1117&title_color=FFD700&icon_color=E63946&text_color=ffffff&border_color=FFD700&hide_border=false&count_private=true&include_all_commits=true"/>
 <img height="175em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=NeonTechno&layout=compact&bg_color=0D1117&title_color=FFD700&text_color=ffffff&border_color=FFD700&hide_border=false&langs_count=8"/>
@@ -180,90 +189,109 @@ Classical & modern ciphers — Playfair, Vigenère, Rail Fence, Polybius, Beaufo
 
 </div>
 
-<!-- ▓▓▓ KENTE DIVIDER 5 ▓▓▓ -->
+<!-- ▓ KENTE DIVIDER ▓ -->
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:E63946,16:FFD700,33:1a1a1a,50:228B22,66:FFD700,83:E63946,100:a855f7&height=8" width="100%"/>
 
 ---
 
 <div align="center">
 
-## 🏆 Chapter V — The Shelf
+## ☥ Animuonyam — Chapter V · Nneɛma a Manya
+*( The Honours · Trophies )*
 
 ![Trophies](https://github-profile-trophy.vercel.app/?username=NeonTechno&theme=darkhub&no-frame=false&no-bg=false&margin-w=10&column=4)
 
 </div>
 
-<!-- ▓▓▓ KENTE DIVIDER 6 ▓▓▓ -->
+<!-- ▓ KENTE DIVIDER ▓ -->
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00bfff,20:228B22,40:FFD700,60:E63946,80:1a1a1a,100:a855f7&height=8" width="100%"/>
 
 ---
 
 <div align="center">
 
-## 🌱 Chapter VI — Levelling Up
+## ✦ Suahu — Chapter VI · Dɛn Na Meresua?
+*( What Am I Learning? · Sankofa — always reaching back to grow forward )*
 
-| Skill | Progress |
-|:------|:--------:|
-| 🔩 Deep C++ & Systems Programming | ![80%](https://img.shields.io/badge/80%25-FFD700?style=flat-square) |
-| ⛓️ Cosmos SDK Blockchain Architecture | ![60%](https://img.shields.io/badge/60%25-228B22?style=flat-square) |
-| 🔐 Cybersecurity & Reverse Engineering | ![70%](https://img.shields.io/badge/70%25-E63946?style=flat-square) |
-| 🤖 AI Agents & Autonomous Systems | ![55%](https://img.shields.io/badge/55%25-a855f7?style=flat-square) |
-| 🔑 Post-Quantum Cryptography | ![80%](https://img.shields.io/badge/80%25-00bfff?style=flat-square) |
-| 📈 Crypto Technical Analysis | ![40%](https://img.shields.io/badge/40%25-FFD700?style=flat-square) |
+| Adinkra | Skill | Tua — Level |
+|:-------:|:------|:-----------:|
+| ∞ | Deep C++ & Systems Programming | ![80%](https://img.shields.io/badge/80%25-FFD700?style=flat-square) |
+| ⊕ | Cosmos SDK Blockchain Architecture | ![60%](https://img.shields.io/badge/60%25-228B22?style=flat-square) |
+| ☥ | Cybersecurity & Reverse Engineering | ![70%](https://img.shields.io/badge/70%25-E63946?style=flat-square) |
+| ❖ | AI Agents & Autonomous Systems | ![55%](https://img.shields.io/badge/55%25-a855f7?style=flat-square) |
+| ⟁ | Post-Quantum Cryptography | ![80%](https://img.shields.io/badge/80%25-00bfff?style=flat-square) |
+| ✦ | Crypto Technical Analysis | ![40%](https://img.shields.io/badge/40%25-FFD700?style=flat-square) |
 
 </div>
 
-<!-- ▓▓▓ KENTE DIVIDER 7 ▓▓▓ -->
+<!-- ▓ KENTE DIVIDER — Thick ▓ -->
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:FFD700,12:E63946,25:228B22,37:1a1a1a,50:00bfff,62:a855f7,75:FFD700,87:E63946,100:228B22&height=12" width="100%"/>
 
 ---
 
 <div align="center">
 
-## 🌍 Chapter VII — The Manifesto
+## ∞ Kasafua — Chapter VII · Afrika Nhyiam
+*( The Manifesto · Africa Rising )*
 
 </div>
 
 <div align="center">
 
-![Manifesto](https://capsule-render.vercel.app/api?type=soft&color=0:1a1a1a,100:1a1a1a&height=220&text=Africa%20is%20not%20behind%20%E2%80%94%20Africa%20is%20loading.&fontSize=28&fontColor=FFD700&desc=The%20same%20coast%20that%20held%20the%20Door%20of%20No%20Return%20now%20sends%20code%20to%20every%20corner%20of%20the%20earth.%20Ghana%20gave%20the%20world%20Kwame%20Nkrumah.%20NeonTechnoX%20is%20giving%20the%20world%20DRP.&descSize=13&descAlignY=70&descAlign=50&fontAlignY=38)
+<img src="https://capsule-render.vercel.app/api?type=soft&color=0:1a1a1a,100:1a1a1a&height=200&text=%E2%98%A5%20Afrika%20nte%20akyi%20%E2%80%94%20Afrika%20resan%20aba.&fontSize=26&fontColor=FFD700&desc=%22The%20same%20coast%20that%20held%20the%20Door%20of%20No%20Return%20now%20sends%20code%20to%20every%20corner%20of%20the%20earth.%22&descSize=14&descAlignY=72&descAlign=50&fontAlignY=38" width="100%"/>
 
 </div>
 
+<br/>
+
 <div align="center">
 
-🟨🟥🟩⬛🟦🟨🟥🟩⬛🟦🟨🟥🟩⬛🟦🟨🟥🟩⬛🟦🟨🟥🟩⬛🟦
+*☥ · ⊕ · ∞ · ✦ · ❖ · ⟁ · ☥ · ⊕ · ∞ · ✦ · ❖ · ⟁ · ☥ · ⊕ · ∞ · ✦ · ❖ · ⟁*
+
+</div>
+
+<br/>
+
+> **Ɛyɛ Ewurade Nkoaa** *(Only by the grace of God)* — but also by relentless work.
+
+Ghana gave the world **Kwame Nkrumah**. The Cape Coast gave the world a door.
+**NeonTechnoX** is giving the world **DRP** — and this time, we're not leaving to come back. We're building right here. 🏰
 
 *Every thread in Kente cloth is intentional.*
 *Every line of DRP code is intentional.*
 *Woven for permanence. Built for Africa. Open to the world.*
 
-**Medaase · Akwaaba · Let's build.** 🇬🇭
+<div align="center">
 
-🟨🟥🟩⬛🟦🟨🟥🟩⬛🟦🟨🟥🟩⬛🟦🟨🟥🟩⬛🟦🟨🟥🟩⬛🟦
+**Medaase · Akwaaba · Yɛbɛyɛ adwuma** *(Thank you · Welcome · We will do the work)* 🇬🇭
+
+*☥ · ⊕ · ∞ · ✦ · ❖ · ⟁ · ☥ · ⊕ · ∞ · ✦ · ❖ · ⟁ · ☥ · ⊕ · ∞ · ✦ · ❖ · ⟁*
 
 </div>
 
-<!-- ▓▓▓ KENTE DIVIDER 8 — Thick finale ▓▓▓ -->
+<!-- ▓ KENTE DIVIDER — Thickest, finale ▓ -->
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:FFD700,12:FFD700,12:E63946,25:E63946,25:228B22,37:228B22,37:1a1a1a,50:1a1a1a,50:FFD700,62:FFD700,62:E63946,75:E63946,75:228B22,87:228B22,87:1a1a1a,100:1a1a1a&height=14" width="100%"/>
 
 ---
 
 <div align="center">
 
-## 📡 Chapter VIII — Find Me
+## ⟁ Kasa Kyerɛ Me — Chapter VIII · Hu Me Baabi
+*( Speak to Me · Find Me )*
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=FFD700)](https://www.linkedin.com/in/joel-caleb-nkrumah-2b3a2623b)
 [![Telegram](https://img.shields.io/badge/Telegram-229ED9?style=for-the-badge&logo=telegram&logoColor=FFD700)](https://t.me/NeontechnoX)
-[![Discord](https://img.shields.io/badge/Discord-%235865F2?style=for-the-badge&logo=discord&logoColor=FFD700)](https://discord.com/users/neontechno)
+[![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=FFD700)](https://discord.com/users/neontechno)
 [![GitHub](https://img.shields.io/badge/GitHub-1a1a1a?style=for-the-badge&logo=github&logoColor=FFD700)](https://github.com/NeonTechno)
 
 <br/>
 
-> 💬 *DM me about DRP, robotics, blockchain, cybersecurity, or just African tech in general. Always down to connect.* 🤝🏾
+> ⊕ *Kasa me ho — DRP, robotics, blockchain, cybersecurity, anaa Africa tech biara.*
+> *( Talk to me about — DRP, robotics, blockchain, cybersecurity, or any African tech. )*
+> *Always down. Yɛbɛkasa. 🤝🏾*
 
 <br/>
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:228B22,25:FFD700,50:E63946,75:1a1a1a,100:a855f7&height=150&section=footer&text=NeonTechnoX%20%C2%B7%20Ghana%20%F0%9F%87%AC%F0%9F%87%AD%20%C2%B7%20Building%20Forward&fontSize=16&fontColor=ffffff&fontAlignY=65" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:228B22,25:FFD700,50:E63946,75:1a1a1a,100:a855f7&height=150&section=footer&text=NeonTechnoX%20%C2%B7%20Ghana%20%F0%9F%87%AC%F0%9F%87%AD%20%C2%B7%20%E2%98%A5%20Gye%20Nyame%20%C2%B7%20Yɛbɛyɛ%20Adwuma&fontSize=15&fontColor=ffffff&fontAlignY=65" width="100%"/>
