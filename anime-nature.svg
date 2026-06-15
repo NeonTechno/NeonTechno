@@ -1,0 +1,737 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 900 500" width="900" height="500">
+<defs>
+
+  <!-- SKY GRADIENT - lofi anime dusk/golden hour -->
+  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%"   stop-color="#1a1033"/>
+    <stop offset="30%"  stop-color="#3d2060"/>
+    <stop offset="60%"  stop-color="#c4607a"/>
+    <stop offset="80%"  stop-color="#f0a06a"/>
+    <stop offset="100%" stop-color="#ffd680"/>
+  </linearGradient>
+
+  <!-- MOUNTAIN GRADIENTS -->
+  <linearGradient id="mtnFar" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%"   stop-color="#4a2d6e"/>
+    <stop offset="100%" stop-color="#2a1a42"/>
+  </linearGradient>
+  <linearGradient id="mtnMid" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%"   stop-color="#2d5a3d"/>
+    <stop offset="100%" stop-color="#1a3626"/>
+  </linearGradient>
+  <linearGradient id="mtnNear" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%"   stop-color="#1e4028"/>
+    <stop offset="100%" stop-color="#0d2015"/>
+  </linearGradient>
+
+  <!-- WATER / WATERFALL -->
+  <linearGradient id="waterfall" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%"   stop-color="#a8d8f0" stop-opacity="0.9"/>
+    <stop offset="50%"  stop-color="#6ab4e0" stop-opacity="0.8"/>
+    <stop offset="100%" stop-color="#c8ecff" stop-opacity="0.6"/>
+  </linearGradient>
+  <linearGradient id="pool" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%"   stop-color="#5ba0c8"/>
+    <stop offset="100%" stop-color="#1a4a6e"/>
+  </linearGradient>
+  <linearGradient id="river" x1="0" y1="1" x2="1" y2="1">
+    <stop offset="0%"   stop-color="#3a7aaa"/>
+    <stop offset="50%"  stop-color="#6ab4d8"/>
+    <stop offset="100%" stop-color="#2a5a88"/>
+  </linearGradient>
+
+  <!-- GRASS / GROUND -->
+  <linearGradient id="groundFar" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%"   stop-color="#2d6e3a"/>
+    <stop offset="100%" stop-color="#1a3d22"/>
+  </linearGradient>
+  <linearGradient id="groundNear" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%"   stop-color="#1e5228"/>
+    <stop offset="100%" stop-color="#0d2a14"/>
+  </linearGradient>
+
+  <!-- SUN GLOW -->
+  <radialGradient id="sun" cx="50%" cy="50%" r="50%">
+    <stop offset="0%"   stop-color="#fff8c0" stop-opacity="1"/>
+    <stop offset="40%"  stop-color="#ffd060" stop-opacity="0.8"/>
+    <stop offset="100%" stop-color="#ff8040" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="sunCore" cx="50%" cy="50%" r="50%">
+    <stop offset="0%"   stop-color="#fffde0"/>
+    <stop offset="100%" stop-color="#ffc040"/>
+  </radialGradient>
+
+  <!-- MOON / LANTERN GLOW -->
+  <radialGradient id="moonGlow" cx="50%" cy="50%" r="50%">
+    <stop offset="0%"   stop-color="#e8d8ff" stop-opacity="0.9"/>
+    <stop offset="100%" stop-color="#6040a0" stop-opacity="0"/>
+  </radialGradient>
+
+  <!-- MIST -->
+  <radialGradient id="mist" cx="50%" cy="50%" r="50%">
+    <stop offset="0%"   stop-color="#c8e8f8" stop-opacity="0.55"/>
+    <stop offset="100%" stop-color="#a0c8e0" stop-opacity="0"/>
+  </radialGradient>
+
+  <!-- LIGHT RAYS filter -->
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="6" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+    <feGaussianBlur stdDeviation="3" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="bigGlow" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="18"/>
+  </filter>
+  <filter id="waterBlur">
+    <feGaussianBlur stdDeviation="1.5"/>
+  </filter>
+  <filter id="mistBlur">
+    <feGaussianBlur stdDeviation="12"/>
+  </filter>
+  <filter id="petBlur">
+    <feGaussianBlur stdDeviation="0.6"/>
+  </filter>
+
+  <!-- CLIP SCENE -->
+  <clipPath id="scene"><rect width="900" height="500" rx="14"/></clipPath>
+  <clipPath id="waterfallClip">
+    <rect x="380" y="160" width="60" height="200"/>
+  </clipPath>
+
+  <!-- CHERRY BLOSSOM petal shape -->
+  <path id="petal" d="M0,-7 Q4,-3 3,4 Q0,7 -3,4 Q-4,-3 0,-7Z"/>
+
+  <!-- GRASS BLADE -->
+  <path id="blade" d="M0,0 Q-3,-15 0,-30 Q3,-15 0,0Z"/>
+
+  <!-- STAR -->
+  <circle id="star" r="1"/>
+
+  <!-- FISH SHAPE -->
+  <path id="fish" d="M0,0 Q6,-3 10,0 Q6,3 0,0 M10,0 Q14,-4 14,-4 Q14,4 14,4 Q10,0 10,0Z"/>
+
+  <style>
+    /* ── WATERFALL FLOW —*/
+    .wf-stream { animation: wfFlow 1.4s linear infinite; }
+    .wf-stream2 { animation: wfFlow 1.4s linear infinite 0.47s; }
+    .wf-stream3 { animation: wfFlow 1.4s linear infinite 0.93s; }
+    @keyframes wfFlow {
+      0%{   transform: translateY(-40px); opacity:0; }
+      15%{  opacity: 0.9; }
+      85%{  opacity: 0.9; }
+      100%{ transform: translateY(40px); opacity:0; }
+    }
+
+    /* ── MIST PULSE ─*/
+    .mist1 { animation: mistPulse 3.5s ease-in-out infinite; }
+    .mist2 { animation: mistPulse 4.2s ease-in-out infinite 1.2s; }
+    .mist3 { animation: mistPulse 5s ease-in-out infinite 2.5s; }
+    @keyframes mistPulse {
+      0%,100% { opacity:0.2; transform: scaleX(0.8) translateX(-10px); }
+      50%     { opacity:0.7; transform: scaleX(1.2) translateX(10px); }
+    }
+
+    /* — RIPPLES —*/
+    .ripple  { animation: rippleOut 2.8s ease-out infinite; }
+    .ripple2 { animation: rippleOut 2.8s ease-out infinite 0.9s; }
+    .ripple3 { animation: rippleOut 2.8s ease-out infinite 1.8s; }
+    @keyframes rippleOut {
+      0%   { rx:4; ry:2; opacity:0.8; }
+      100% { rx:50; ry:18; opacity:0; }
+    }
+
+    /* ── RIVER SHIMMER ─*/
+    .shimmer { animation: shimmerFlow 2s linear infinite; }
+    @keyframes shimmerFlow {
+      0%   { transform: translateX(-30px); opacity:0; }
+      30%  { opacity:0.6; }
+      70%  { opacity:0.6; }
+      100% { transform: translateX(60px); opacity:0; }
+    }
+
+    /* ── CLOUD DRIFT —*/
+    .cloud1 { animation: cloudDrift1 22s linear infinite; }
+    .cloud2 { animation: cloudDrift2 30s linear infinite 5s; }
+    .cloud3 { animation: cloudDrift3 18s linear infinite 10s; }
+    @keyframes cloudDrift1 {
+      0%   { transform: translateX(-200px); }
+      100% { transform: translateX(1100px); }
+    }
+    @keyframes cloudDrift2 {
+      0%   { transform: translateX(200px); }
+      100% { transform: translateX(1300px); }
+    }
+    @keyframes cloudDrift3 {
+      0%   { transform: translateX(-300px); }
+      100% { transform: translateX(1000px); }
+    }
+
+    /* ── SUN PULSE ─*/
+    .sunPulse { animation: sunGlow 4s ease-in-out infinite; }
+    @keyframes sunGlow {
+      0%,100% { opacity:0.55; }
+      50%     { opacity:0.9; }
+    }
+
+    /* — LIGHT RAYS —*/
+    .ray { animation: rayFade 6s ease-in-out infinite; }
+    .ray2 { animation: rayFade 6s ease-in-out infinite 2s; }
+    .ray3 { animation: rayFade 6s ease-in-out infinite 4s; }
+    @keyframes rayFade {
+      0%,100% { opacity:0; }
+      30%,70%  { opacity:0.18; }
+    }
+
+    /* ── GRASS SWAY ─*/
+    .grp1 { animation: sway1 2.2s ease-in-out infinite; transform-origin: 50% 100%; }
+    .grp2 { animation: sway2 2.6s ease-in-out infinite 0.4s; transform-origin: 50% 100%; }
+    .grp3 { animation: sway3 2s ease-in-out infinite 0.8s; transform-origin: 50% 100%; }
+    .grp4 { animation: sway1 2.8s ease-in-out infinite 1.2s; transform-origin: 50% 100%; }
+    @keyframes sway1 {
+      0%,100% { transform: rotate(-5deg); }
+      50%      { transform: rotate(5deg); }
+    }
+    @keyframes sway2 {
+      0%,100% { transform: rotate(-3deg); }
+      50%      { transform: rotate(6deg); }
+    }
+    @keyframes sway3 {
+      0%,100% { transform: rotate(-7deg); }
+      50%      { transform: rotate(3deg); }
+    }
+
+    /* — CHERRY BLOSSOMS ─*/
+    .p1  { animation: petalFall1 6s ease-in infinite; }
+    .p2  { animation: petalFall2 7s ease-in infinite 1s; }
+    .p3  { animation: petalFall3 5s ease-in infinite 2s; }
+    .p4  { animation: petalFall1 8s ease-in infinite 3s; }
+    .p5  { animation: petalFall2 6.5s ease-in infinite 0.5s; }
+    .p6  { animation: petalFall3 7s ease-in infinite 4s; }
+    .p7  { animation: petalFall8 5.5s ease-in infinite 1.5s; }
+    .p8  { animation: petalFall2 8s ease-in infinite 2.5s; }
+    .p9  { animation: petalFall3 6s ease-in infinite 3.5s; }
+    .p10 { animation: petalFall1 7s ease-in infinite 0.8s; }
+    @keyframes petalFall1 {
+      0%   { transform: translate(0,-20px) rotate(0deg); opacity:1; }
+      100% { transform: translate(40px, 160px) rotate(360deg); opacity:0; }
+    }
+    @keyframes petalFall2 {
+      0%   { transform: translate(0,-20px) rotate(20deg); opacity:1; }
+      100% { transform: translate(-50px,180px) rotate(-300deg); opacity:0; }
+    }
+    @keyframes petalFall3 {
+      0%   { transform: translate(0,-20px) rotate(-10deg); opacity:1; }
+      50%  { transform: translate(30px,80px) rotate(180deg); }
+      100% { transform: translate(-20px,170px) rotate(400deg); opacity:0; }
+    }
+    @keyframes petalFall8 {
+      0%   { transform: translate(0,-20px) rotate(-10deg); opacity:1; }
+      50%  { transform: translate(30px,80px) rotate(180deg); }
+      100% { transform: translate(-20px,170px) rotate(400deg); opacity:0; }
+    }
+
+    /* ─ FIREFLIES ─*/
+    .ff1 { animation: ffFloat1 4s ease-in-out infinite; }
+    .ff2 { animation: ffFloat2 5s ease-in-out infinite 1s; }
+    .ff3 { animation: ffFloat3 3.5s ease-in-out infinite 2s; }
+    .ff4 { animation: ffFloat1 6s ease-in-out infinite 0.5s; }
+    .ff5 { animation: ffFloat2 4.5s ease-in-out infinite 3s; }
+    @keyframes ffFloat1 {
+      0%,100% { transform: translate(0,0); opacity:0; }
+      20%,80%  { opacity:0.9; }
+      50%      { transform: translate(15px,-20px); opacity:1; }
+    }
+    @keyframes ffFloat2 {
+      0%,100% { transform: translate(0,0); opacity:0; }
+      25%,75%  { opacity:0.8; }
+      50%      { transform: translate(-18px,-14px); opacity:1; }
+    }
+    @keyframes ffFloat3 {
+      0%,100% { transform: translate(0,0) scale(1); opacity:0; }
+      30%,70%  { opacity:1; }
+      50%      { transform: translate(10px,-25px) scale(1.2); }
+    }
+
+    /* ── STARS TWINKLE ─*/
+    .st1 { animation: twinkle 2.5s ease-in-out infinite; }
+    .st2 { animation: twinkle 3s ease-in-out infinite 0.7s; }
+    .st3 { animation: twinkle 2s ease-in-out infinite 1.4s; }
+    .st4 { animation: twinkle 3.5s ease-in-out infinite 2s; }
+    @keyframes twinkle {
+      0%,100% { opacity:0.2; r:1; }
+      50%      { opacity:1; r:1.8; }
+    }
+
+    /* ── FISH SWIM —*/
+    .fish1 { animation: fishSwim 8s linear infinite; }
+    .fish2 { animation: fishSwim2 11s linear infinite 3s; }
+    @keyframes fishSwim {
+      0%   { transform: translateX(-30px); opacity:0; }
+      10%  { opacity:0.7; }
+      90%  { opacity:0.7; }
+      100% { transform: translateX(200px); opacity:0; }
+    }
+    @keyframes fishSwim2 {
+      0%   { transform: translateX(180px) scaleX(-1); opacity:0; }
+      10%  { opacity:0.6; }
+      90%  { opacity:0.6; }
+      100% { transform: translateX(-20px) scaleX(-1); opacity:0; }
+    }
+
+    /* — BIRD SOAR ─*/
+    .bird1 { animation: birdFly 12s linear infinite; }
+    .bird2 { animation: birdFly 16s linear infinite 4s; }
+    .bird3 { animation: birdFly 10s linear infinite 8s; }
+    @keyframes birdFly {
+      0%   { transform: translate(-80px, 0) scale(0.6); opacity:0; }
+      8%   { opacity:1; }
+      92%  { opacity:1; }
+      100% { transform: translate(980px,-30px) scale(0.6); opacity:0; }
+    }
+
+    /* — LANTERN FLOAT —*/
+    .lantern1 { animation: lanternRise 8s ease-in-out infinite; }
+    .lantern2 { animation: lanternRise 10s ease-in-out infinite 3s; }
+    .lantern3 { animation: lanternRise 7s ease-in-out infinite 5s; }
+    @keyframes lanternRise {
+      0%   { transform: translateY(0) rotate(-3deg); opacity:0; }
+      10%  { opacity:0.9; }
+      90%  { opacity:0.6; }
+      100% { transform: translateY(-160px) rotate(5deg); opacity:0; }
+    }
+
+    /* ─ TREE CANOPY SWAY ─*/
+    .treeSway { animation: canopySway 4s ease-in-out infinite; transform-origin: 50% 100%; }
+    .treeSway2 { animation: canopySway 5s ease-in-out infinite 1.5s; transform-origin: 50% 100%; }
+    @keyframes canopySway {
+      0%,100% { transform: rotate(-1.5deg); }
+      50%      { transform: rotate(1.5deg); }
+    }
+
+    /* ─ FOAM BUBBLES —*/
+    .foam1 { animation: foamRise 2s ease-out infinite; }
+    .foam2 { animation: foamRise 2s ease-out infinite 0.6s; }
+    .foam3 { animation: foamRise 2s ease-out infinite 1.2s; }
+    @keyframes foamRise {
+      0%   { transform: translateY(0) scale(1); opacity:0.8; }
+      100% { transform: translateY(-25px) scale(0.3); opacity:0; }
+    }
+  </style>
+</defs>
+
+<g clip-path="url(#scene)">
+
+<!-- ═════════ SKY ═════════ -->
+<rect width="900" height="500" fill="url(#sky)"/>
+
+<!-- ═ Stars (upper sky) ═ -->
+<g fill="#e8d0ff">
+  <circle class="st1" cx="60"  cy="30" r="1.2"/>
+  <circle class="st2" cx="130" cy="18" r="1"/>
+  <circle class="st3" cx="210" cy="42" r="1.4"/>
+  <circle class="st4" cx="300" cy="15" r="1"/>
+  <circle class="st1" cx="390" cy="28" r="1.2"/>
+  <circle class="st2" cx="500" cy="10" r="1"/>
+  <circle class="st3" cx="600" cy="35" r="1.3"/>
+  <circle class="st4" cx="720" cy="20" r="1"/>
+  <circle class="st1" cx="820" cy="40" r="1.2"/>
+  <circle class="st2" cx="870" cy="12" r="0.8"/>
+  <circle class="st3" cx="45"  cy="55" r="0.9"/>
+  <circle class="st4" cx="180" cy="65" r="1.1"/>
+  <circle class="st1" cx="440" cy="48" r="0.9"/>
+  <circle class="st2" cx="680" cy="55" r="1"/>
+  <circle class="st3" cx="790" cy="65" r="0.8"/>
+</g>
+
+<!-- — Moon halo ─ -->
+<circle cx="760" cy="70" r="55" fill="url(#moonGlow)" filter="url(#bigGlow)"/>
+
+<!-- ─ Moon ─ -->
+<circle cx="760" cy="70" r="26" fill="#f0e8ff" filter="url(#softGlow)"/>
+<circle cx="760" cy="70" r="24" fill="#e8d8f8"/>
+<!-- moon craters -->
+<circle cx="750" cy="62" r="4" fill="#d0c0e8" opacity="0.5"/>
+<circle cx="768" cy="78" r="2.5" fill="#d0c0e8" opacity="0.4"/>
+<circle cx="755" cy="80" r="2"  fill="#d0c0e8" opacity="0.3"/>
+
+<!-- ─ Sun / setting sun ─ -->
+<circle cx="170" cy="195" r="70" fill="url(#sun)" filter="url(#bigGlow)" class="sunPulse"/>
+<circle cx="170" cy="195" r="32" fill="url(#sunCore)" filter="url(#softGlow)"/>
+<circle cx="170" cy="195" r="28" fill="#fff5a0"/>
+
+<!-- ─ Light rays from sun ─ -->
+<g class="ray" opacity="0.18" fill="none" stroke="#ffd060" stroke-width="30" stroke-linecap="round">
+  <line x1="170" y1="195" x2="80"  y2="80"/>
+  <line x1="170" y1="195" x2="300" y2="60"/>
+  <line x1="170" y1="195" x2="20"  y2="200"/>
+</g>
+<g class="ray2" opacity="0.15" fill="none" stroke="#ffd060" stroke-width="20" stroke-linecap="round">
+  <line x1="170" y1="195" x2="50"  y2="130"/>
+  <line x1="170" y1="195" x2="280" y2="110"/>
+  <line x1="170" y1="195" x2="350" y2="180"/>
+</g>
+
+<!-- ─ Clouds — -->
+<g class="cloud1" opacity="0.6">
+  <ellipse cx="200" cy="90"  rx="90" ry="22" fill="#d080b0"/>
+  <ellipse cx="230" cy="78"  rx="60" ry="18" fill="#e090c0"/>
+  <ellipse cx="175" cy="82"  rx="50" ry="16" fill="#e090c0"/>
+  <ellipse cx="210" cy="68"  rx="38" ry="14" fill="#f0a8d0"/>
+</g>
+<g class="cloud2" opacity="0.5">
+  <ellipse cx="600" cy="60"  rx="75" ry="18" fill="#9060b0"/>
+  <ellipse cx="630" cy="50"  rx="55" ry="15" fill="#a070c0"/>
+  <ellipse cx="580" cy="54"  rx="45" ry="13" fill="#a070c0"/>
+  <ellipse cx="612" cy="42"  rx="35" ry="12" fill="#b880d0"/>
+</g>
+<g class="cloud3" opacity="0.4">
+  <ellipse cx="450" cy="110" rx="55" ry="14" fill="#c878a0"/>
+  <ellipse cx="470" cy="100" rx="38" ry="12" fill="#d888b0"/>
+  <ellipse cx="435" cy="104" rx="32" ry="11" fill="#d888b0"/>
+</g>
+
+<!-- — Birds ─ -->
+<g class="bird1" fill="none" stroke="#3a1a50" stroke-width="1.5" stroke-linecap="round">
+  <path d="M100,110 Q108,103 116,110"/>
+  <path d="M118,110 Q126,103 134,110"/>
+</g>
+<g class="bird2" fill="none" stroke="#3a1a50" stroke-width="1.2" stroke-linecap="round">
+  <path d="M200,80 Q206,74 212,80"/>
+  <path d="M213,80 Q219,74 225,80"/>
+  <path d="M240,86 Q244,81 248,86"/>
+  <path d="M249,86 Q253,81 257,86"/>
+</g>
+<g class="bird3" fill="none" stroke="#3a1a50" stroke-width="1.4" stroke-linecap="round">
+  <path d="M80,130 Q87,123 94,130"/>
+  <path d="M95,130 Q102,123 109,130"/>
+</g>
+
+<!-- ═════════ DISTANT MOUNTAINS ═════════ -->
+<polygon points="0,300 80,160 170,260 280,140 380,240 500,130 620,220 750,120 850,200 900,160 900,300"
+         fill="url(#mtnFar)" opacity="0.85"/>
+<polygon points="80,160 100,185 60,185"   fill="#f0e8ff" opacity="0.6"/>
+<polygon points="280,140 308,172 252,172" fill="#f0e8ff" opacity="0.6"/>
+<polygon points="500,130 530,165 470,165" fill="#f0e8ff" opacity="0.6"/>
+<polygon points="750,120 785,158 715,158" fill="#f0e8ff" opacity="0.55"/>
+
+<!-- ═════════ MID MOUNTAINS (green) ═════════ -->
+<polygon points="0,360 100,240 200,300 320,210 430,280 540,200 660,270 780,185 900,250 900,360"
+         fill="url(#mtnMid)"/>
+<g fill="#1a3626" opacity="0.9">
+  <polygon points="110,303 118,270 126,303"/>
+  <polygon points="124,303 132,263 140,303"/>
+  <polygon points="138,303 147,268 156,303"/>
+  <polygon points="200,303 208,280 216,303"/>
+  <polygon points="325,215 334,185 343,215"/>
+  <polygon points="340,215 349,178 358,215"/>
+  <polygon points="355,215 364,188 373,215"/>
+  <polygon points="540,205 549,172 558,205"/>
+  <polygon points="555,205 564,168 573,205"/>
+  <polygon points="570,205 579,175 588,205"/>
+  <polygon points="660,273 669,245 678,273"/>
+  <polygon points="675,273 684,240 693,273"/>
+  <polygon points="785,190 794,160 803,190"/>
+  <polygon points="800,190 809,157 818,190"/>
+  <polygon points="815,190 824,163 833,190"/>
+</g>
+
+<!-- ═════════ NEAR FOREGROUND HILLS ═════════ -->
+<path d="M0,420 Q150,340 300,390 Q420,350 520,400 Q640,360 760,390 Q840,370 900,395 L900,500 L0,500Z"
+      fill="url(#mtnNear)"/>
+
+<!-- ═════════ CLIFF / WATERFALL ROCK ═════════ -->
+<path d="M320,220 Q340,200 360,215 L370,390 L310,390Z" fill="#2a3a22"/>
+<path d="M320,220 Q340,200 360,215 L358,280 L322,280Z" fill="#354830" opacity="0.6"/>
+<path d="M440,225 Q460,205 480,220 L490,390 L430,390Z" fill="#2a3a22"/>
+<path d="M440,225 Q460,205 480,220 L478,275 L442,275Z" fill="#354830" opacity="0.5"/>
+
+<!-- ═════════ WATERFALL ═════════ -->
+<rect x="358" y="215" width="82" height="180" fill="url(#waterfall)" opacity="0.3" filter="url(#waterBlur)"/>
+
+<g clip-path="url(#waterfallClip)">
+  <g class="wf-stream">
+    <rect x="362" y="215" width="12" height="180" fill="#c8e8ff" opacity="0.7" rx="6"/>
+    <rect x="382" y="215" width="8"  height="180" fill="#a0d0f0" opacity="0.5" rx="4"/>
+    <rect x="398" y="215" width="14" height="180" fill="#c8e8ff" opacity="0.65" rx="7"/>
+    <rect x="420" y="215" width="10" height="180" fill="#b0d8f8" opacity="0.5" rx="5"/>
+  </g>
+  <g class="wf-stream2">
+    <rect x="370" y="215" width="10" height="180" fill="#d8f0ff" opacity="0.6" rx="5"/>
+    <rect x="390" y="215" width="8"  height="180" fill="#a8d8f0" opacity="0.5" rx="4"/>
+    <rect x="410" y="215" width="12" height="180" fill="#c0e4ff" opacity="0.55" rx="6"/>
+  </g>
+  <g class="wf-stream3">
+    <rect x="366" y="215" width="8"  height="180" fill="#e0f4ff" opacity="0.5" rx="4"/>
+    <rect x="386" y="215" width="12" height="180" fill="#b8dcf0" opacity="0.6" rx="6"/>
+    <rect x="406" y="215" width="8"  height="180" fill="#d0ecff" opacity="0.45" rx="4"/>
+    <rect x="426" y="215" width="10" height="180" fill="#b8dcf0" opacity="0.5" rx="5"/>
+  </g>
+</g>
+
+<ellipse cx="399" cy="218" rx="44" ry="8" fill="#e8f8ff" opacity="0.4" filter="url(#waterBlur)"/>
+
+<!-- ═════════ POOL / RIVER ═════════ -->
+<ellipse cx="400" cy="400" rx="130" ry="35" fill="url(#pool)" opacity="0.9"/>
+<ellipse cx="400" cy="400" rx="115" ry="28" fill="#5ba8d0" opacity="0.5"/>
+
+<g filter="url(#mistBlur)">
+  <ellipse cx="400" cy="395" rx="90" ry="30" fill="#c8ecff" opacity="0.4" class="mist1"/>
+  <ellipse cx="390" cy="390" rx="70" ry="22" fill="#d8f0ff" opacity="0.35" class="mist2"/>
+  <ellipse cx="415" cy="398" rx="80" ry="25" fill="#b8e8f8" opacity="0.3" class="mist3"/>
+</g>
+
+<path d="M450,400 Q560,410 700,405 Q800,402 900,408 L900,430 Q800,425 700,428 Q560,434 450,422Z"
+      fill="url(#river)" opacity="0.85"/>
+<path d="M0,408 Q80,402 200,405 Q280,408 340,400 L355,422 Q275,430 200,428 Q80,426 0(430Z"
+      fill="url(#river)" opacity="0.75"/>
+
+<g opacity="0.4" fill="none" stroke="#a0d8f0" stroke-width="2" stroke-linecap="round">
+  <line class="shimmer" x1="460" y1="408" x2="540" y2="408"/>
+  <line class="shimmer" x1="580" y1="412" x2="660" y2="412" style="animation-delay:0.5s"/>
+  <line class="shimmer" x1="700" y1="407" x2="780" y2="407" style="animation-delay:1s"/>
+  <line class="shimmer" x1="50"  y1="410" x2="120" y2="410" style="animation-delay:0.3s"/>
+  <line class="shimmer" x1="160" y1="408" x2="230" y2="408" style="animation-delay:0.8s"/>
+</g>
+
+<ellipse cx="400" cy="402" class="ripple"  fill="none" stroke="#c8ecff" stroke-width="1.5" rx="4" ry="2"/>
+<ellipse cx="380" cy="408" class="ripple2" fill="none" stroke="#c8ecff" stroke-width="1.2" rx="4" ry="2"/>
+<ellipse cx="420" cy="405" class="ripple3" fill="none" stroke="#c8ecff" stroke-width="1.3" rx="4" ry="2"/>
+
+<g fill="#d8f0ff" opacity="0.8">
+  <circle class="foam1" cx="395" cy="395" r="4"/>
+  <circle class="foam2" cx="408" cy="392" r="3"/>
+  <circle class="foam3" cx="388" cy="398" r="3.5"/>
+</g>
+
+<g class="fish1" fill="#6ae0c0" opacity="0.7" transform="translate(480,412)">
+  <use href="#fish"/>
+</g>
+<g class="fish2" fill="#80d8b8" opacity="0.6" transform="translate(200,415)">
+  <use href="#fish"/>
+</g>
+
+<!-- ═════════ FOREGROUND TQEEQ �-d8�`═════════ -->
+
+<g transform="translate(80,290)">
+  <path d="M-5,160 Q-8,80 -4,0" fill="none" stroke="#5a3010" stroke-width="10" stroke-linecap="round"/>
+  <path d="M-4,30 Q20,10 50,-5"  fill="none" stroke="#6a3815" stroke-width="5" stroke-linecap="round"/>
+  <path d="M-4,55 Q-30,35 -60,20" fill="none" stroke="#6a3815" stroke-width="5" stroke-linecap="round"/>
+  <path d="M-4,80 Q25,70 55,60"   fill="none" stroke="#6a3815" stroke-width="4" stroke-linecap="round"/>
+  <g class="treeSway">
+    <ellipse cx="0"   cy="-20" rx="55" ry="42" fill="#e87090" opacity="0.85"/>
+    <ellipse cx="45"  cy="-12" rx="45" ry="36" fill="#f090a8" opacity="0.8"/>
+    <ellipse cx="-48" cy="-8"  rx="42" ry="34" fill="#e07888" opacity="0.8"/>
+    <ellipse cx="20"  cy="-45" rx="38" ry="30" fill="#f8a0b8" opacity="0.75"/>
+    <ellipse cx="-15" cy="-52" rx="35" ry="28" fill="#f8a0b8" opacity="0.7"/>
+    <ellipse cx="5"   cy="-30" rx="30" ry="22" fill="#ffc0d0" opacity="0.4"/>
+    <ellipse cx="42"  cy="-20" rx="22" ry="18" fill="#ffc0d0" opacity="0.35"/>
+  </g>
+</g>
+
+<g transform="translate(740,250)">
+  <g class="treeSway2">
+    <rect x="-4" y="0" width="8" height="150" fill="#2a1800" rx="3"/>
+    <polygon points="0,-60 -28,0 28,0"   fill="#1a3e20"/>
+    <polygon points="0,-30 -38,20 38,20"  fill="#1e4825"/>
+    <polygon points="0,10  -50,55 50,55"  fill="#235230"/>
+    <polygon points="0,40  -60,90 60,90"  fill="#285c35"/>
+    <polygon points="0,70  -65,120 65,120" fill="#2d663a"/>
+    <ellipse cx="0" cy="-60" rx="10" ry="5" fill="#e0d8f0" opacity="0.5"/>
+    <ellipse cx="0" cy="-30" rx="14" ry="6" fill="#e0d8f0" opacity="0.35"/>
+  </g>
+</g>
+<g transform="translate(820,280)">
+  <g class="treeSway">
+    <rect x="-3" y="0" width="6" height="120" fill="#2a1800" rx="2"/>
+    <polygon points="0,-45 -22,0 22,0"   fill="#1a3e20"/>
+    <polygon points="0,-18 -30,18 30,18"  fill="#1e4825"/>
+    <polygon points="0,12  -40,44 40,44"  fill="#235230"/>
+    <polygon points="0,35  -48,72 48,72"  fill="#285c35"/>
+  </g>
+</g>
+<g transform="translate(870,300)">
+  <g class="treeSway2">
+    <rect x="-3" y="0" width="6" height="100" fill="#2a1800" rx="2"/>
+    <polygon points="0,-38 -18,0 18,0"   fill="#1a3e20" opacity="0.9"/>
+    <polygon points="0,-15 -26,16 26,16"  fill="#1e4825" opacity="0.9"/>
+    <polygon points="0,10  -34,38 34,38"  fill="#235230" opacity="0.9"/>
+    <polygon points="0,28  -40,60 40,60"  fill="#285c35" opacity="0.9"/>
+  </g>
+</g>
+
+<g transform="translate(0,310)" fill="#1e4025" opacity="0.9">
+  <polygon points="20,0 0,60 40,60"/>
+  <polygon points="20,30 -12,100 52,100"/>
+</g>
+<g transform="translate(20,305)" fill="#1e4025" opacity="0.85">
+  <polygon points="15,0 -5,55 35,55"/>
+  <polygon points="15,28 -18,95 48,95"/>
+</g>
+
+<!-- ═════════ FALLING CHERRY PETALS ═════════ -->
+<g fill="#f09ab0" filter="url(#petBlur)">
+  <use href="#petal" class="p1"  transform="translate(50,280)"/>
+  <use href="#petal" class="p2"  transform="translate(90,260)"/>
+  <use href="#petal" class="p3"  transform="translate(130,290)"/>
+  <use href="#petal" class="p4"  transform="translate(30,310)"/>
+  <use href="#petal" class="p5"  transform="translate(75,300)"/>
+  <use href="#petal" class="p6"  transform="translate(160,270)"/>
+  <use href="#petal" class="p7"  transform="translate(110,255)"/>
+  <use href="#petal" class="p8"  transform="translate(200,285)"/>
+  <use href="#petal" class="p9"  transform="translate(140,320)"/>
+  <use href="#petal" class="p10" transform="translate(55,340)"/>
+</g>
+<g fill="#f8c0d0" opacity="0.7" filter="url(#petBlur)">
+  <use href="#petal" class="p3"  transform="translate(40,295)  scale(0.8)"/>
+  <use href="#petal" class="p5"  transform="translate(105,268) scale(0.9)"/>
+  <use href="#petal" class="p7"  transform="translate(175,310) scale(0.7)"/>
+  <use href="#petal" class="p1"  transform="translate(85,340)  scale(0.8)"/>
+</g>
+
+<!-- ═════════ FOREGROUND GRASS — ═════════ -->
+<g fill="#2a6030">
+  <g class="grp1">
+    <path d="M0,500 Q-3,475 0,455 Q3,475 0,500"  transform="translate(0,0)"/>
+    <path d="M0,500 Q-3,475 0,455 Q3,475 0,500"  transform="translate(10,3)"/>
+    <path d="M0,500 Q-4,468 0,445 Q4,468 0*500"  transform="translate(20,-2)"/>
+    <path d="M0,500 Q-3,472 0,450 Q3,472 0,500"  transform="translate(32,1)"/>
+    <path d="M0,500 Q-5,465 0,440 Q5,465 0*500"  transform="translate(44,-4)"/>
+    <path d="M0,500 Q-3,470 0,448 Q3,470 0,500"  transform="translate(56,2)"/>
+    <path d="M0,500 Q-4,467 0,444 Q4,467 0*500"  transform="translate(68,-1)"/>
+    <path d="M0,500 Q-3,473 0,452 Q3,473 0,500"  transform="translate(80,3)"/>
+    <path d="M0,500 Q-4,466 0,442 Q4,466 0*500"  transform="translate(92,-2)"/>
+    <path d="M0,500 Q-3,474 0,453 Q3,474 0,500"  transform="translate(104,1)"/>
+    <path d="M0,500 Q-5,463 0*438 Q5,463 0,500"  transform="translate(116,-3)"/>
+    <path d="M0,500 Q-3,471 0*449 Q3,471 0,500"  transform="translate(130,2)"/>
+    <path d="M0,500 Q-4,468 0*445 Q4,468 0*500"  transform="translate(145,-1)"/>
+    <path d="M0,500 Q-3,475 0*455 Q3,475 0*500"  transform="translate(160,4)"/>
+    <path d="M0,500 Q-4,465 0,441 Q4,465 0,500"  transform="translate(175,-2)"/>
+    <path d="M0,500 Q-3,472 0,451 Q3,472 0,500"  transform="translate(190,1)"/>
+    <path d="M0,500 Q-5,460 0*434 Q5,460 0,500"  transform="translate(205,-4)"/>
+    <path d="M0,500 Q-3,474 0*454 Q3,474 0*500"  transform="translate(220,3)"/>
+    <path d="M0,500 Q-4,466 0*442 Q4,466 0*500"  transform="translate(235,-1)"/>
+    <path d="M0,500 Q-3,473 0*452 Q3,473 0*500"  transform="translate(250,2)"/>
+  </g>
+  <g class="grp2">
+    <path d="M0,500 Q-4,462 0*436 Q4,462 0,500"  transform="translate(5,0)"/>
+    <path d="M0,500 Q-3,470 0*448 Q3,470 0,500"  transform="translate(16,3)"/>
+    <path d="M0,500 Q-5,458 0*432 Q5,458 0,500"  transform="translate(27,-3)"/>
+    <path d="M0,500 Q-3,471 0*450 Q3,471 0,500"  transform="translate(38,1)"/>
+    <path d="M0,500 Q-4,464 0*440 Q4,464 0,500"  transform="translate(50,-2)"/>
+    <path d="M0,500 Q-3,473 0*452 Q3,473 0,500"  transform="translate(62,4)"/>
+    <path d="M0,500 Q-4,460 0*435 Q4,460 0,500"  transform="translate(74,-1)"/>
+    <path d="M0,500 Q-5,455 0*428 Q5,455 0,500"  transform="translate(86,-3)"/>
+    <path d="M0,500 Q-3,472 0*451 Q3,472 0*500"  transform="translate(98,2)"/>
+    <path d="M0,500 Q-4,467 0*443 Q4,467 0,500"  transform="translate(112,-1)"/>
+    <path d="M0,500 Q-3,475 0*455 Q3,475 0,500"  transform="translate(126,3)"/>
+    <path d="M0,500 Q-4,461 0*436 Q4,461 0*500"  transform="translate(140,-2)"/>
+    <path d="M0,500 Q-5,456 0*429 Q5,456 0*500"  transform="translate(155,-4)"/>
+    <path d="M0,500 Q-3,474 0*454 Q3,474 0*500"  transform="translate(170,1)"/>
+    <path d="M0,500 Q-4,462 0*438 Q4,462 0*500"  transform="translate(185,-1)"/>
+    <path d="M0,500 Q-3,470 0*448 Q3,470 0*500"  transform="translate(200,3)"/>
+    <path d="M0,500 Q-4,463 0*439 Q4,463 0*500"  transform="translate(215,-2)"/>
+    <path d="M0,500 Q-3,472 0*450 Q3,472 0*500"  transform="translate(230,2)"/>
+    <path d="M0,500 Q-5,458 0*430 Q5,458 0*500"  transform="translate(245,-3)"/>
+  </g>
+</g>
+
+<g fill="#3a8040" opacity="0.6">
+  <g class="grp3">
+    <path d="M0,500 Q-2,468 0,446 Q2,468 0*500"  transform="translate(8,0)"/>
+    <path d="M0,500 Q-2,463 0*440 Q2,463 0*500"  transform="translate(22,3)"/>
+    <path d="M0,500 Q-3,470 0*448 Q3,470 0*500"  transform="translate(35,-1)"/>
+    <path d="M0,500 Q-2,465 0*442 Q2,465 0*500"  transform="translate(48,2)"/>
+    <path d="M0,500 Q-3,460 0*436 Q3,460 0*500"  transform="translate(60,-2)"/>
+    <path d="M0,500 Q-2,468 0*447 Q2,468 0*500"  transform="translate(75,1)"/>
+    <path d="M0,500 Q-3,462 0*438 Q3,462 0*500"  transform="translate(90,-1)"/>
+    <path d="M0,500 Q-2,470 0*450 Q2,470 0*500"  transform="translate(105,3)"/>
+    <path d="M0,500 Q-3,465 0*441 Q3,465 0*500"  transform="translate(120,-2)"/>
+    <path d="M0,500 Q-2,467 0*445 Q2,467 0*500"  transform="translate(135,1)"/>
+    <path d="M0,500 Q-3,461 0*437 Q3,461 0*500"  transform="translate(150,-1)"/>
+    <path d="M0,500 Q-2,469 0*448 Q2,469 0*500"  transform="translate(165,4)"/>
+    <path d="M0,500 Q-3,464 0*440 Q3,464 0*500"  transform="translate(180,-3)"/>
+    <path d="M0,500 Q-2,471 0*451 Q2,471 0*500"  transform="translate(195,2)"/>
+    <path d="M0,500 Q-3,460 0*435 Q3,460 0*500"  transform="translate(210,-1)"/>
+    <path d="M0,500 Q-2,468 0*447 Q2,468 0*500"  transform="translate(225,3)"/>
+    <path d="M0,500 Q-3,462 0*438 Q3,462 0*500"  transform="translate(240,-2)"/>
+  </g>
+</g>
+
+<g fill="#2a6030">
+  <g class="grp4">
+    <path d="M0,500 Q-3,465 0*440 Q3,465 0*500" transform="translate(550,0)"/>
+    <path d="M0,500 Q-4,460 0*435 Q4,460 0*500" transform="translate(562,3)"/>
+    <path d="M0,500 Q-3,468 0*445 Q3,468 0*500" transform="translate(575,-2)"/>
+    <path d="M0,500 Q-4,463 0*438 Q4,463 0*500" transform="translate(588,1)"/>
+    <path d="M0,500 Q-3,470 0*448 Q3,470 0*500" transform="translate(602,-1)"/>
+    <path d="M0,500 Q-4,458 0*432 Q4,458 0*500" transform="translate(616,4)"/>
+    <path d="M0,500 Q-3,465 0*441 Q3,465 0*500" transform="translate(630,-3)"/>
+    <path d="M0,500 Q-4,462 0*437 Q4,462 0*500" transform="translate(645,2)"/>
+    <path d="M0,500 Q-3,468 0*446 Q3,468 0*500" transform="translate(660,-1)"/>
+    <path d="M0,500 Q-4,460 0*434 Q4,460 0*500" transform="translate(675,3)"/>
+    <path d="M0,500 Q-3,466 0*443 Q3,466 0*500" transform="translate(690,-2)"/>
+    <path d="M0,500 Q-4,463 0*439 Q4,463 0*500" transform="translate(706,1)"/>
+    <path d="M0,500 Q-3,470 0*449 Q3,470 0*500" transform="translate(722,-1)"/>
+    <path d="M0,500 Q-4,458 0*433 Q4,458 0*500" transform="translate(740,3)"/>
+    <path d="M0,500 Q-3,464 0*440 Q3,464 0*500" transform="translate(758,-2)"/>
+    <path d="M0,500 Q-4,461 0*436 Q4,461 0*500" transform="translate(776,1)"/>
+    <path d="M0,500 Q-3,467 0*445 Q3,467 0*500" transform="translate(794,-1)"/>
+    <path d="M0,500 Q-4,459 0*433 Q4,459 0*500" transform="translate(812,4)"/>
+    <path d="M0,500 Q-3,465 0*442 Q3,465 0*500" transform="translate(830,-3)"/>
+    <path d="M0,500 Q-4,462 0*438 Q4,462 0*500" transform="translate(850,2)"/>
+    <path d="M0,500 Q-3,469 0*448 Q3,469 0*500" transform="translate(870,-1)"/>
+    <path d="M0,500 Q-4,457 0*430 Q4,457 0*500" transform="translate(890,3)"/>
+  </g>
+</g>
+
+<!-- ═════════ LANTERNS — ═════════ -->
+<g class="lantern1" transform="translate(620,430)">
+  <ellipse cx="0" cy="0" rx="20" ry="20" fill="#ff8820" opacity="0.15" filter="url(#bigGlow)"/>
+  <rect x="-7" y="-14" width="14" height="18" fill="#ff9933" rx="4"/>
+  <ellipse cx="0" cy="-14" rx="9"  ry="5"  fill="#ffbb55"/>
+  <ellipse cx="0" cy="4"   rx="9"  ry="5"  fill="#e07722"/>
+  <line x1="0" y1="4" x2="-4" y2="12" stroke="#cc6610" stroke-width="1" opacity="0.6"/>
+  <line x1="0" y1="4" x2="4"  y2="12" stroke="#cc6610" stroke-width="1" opacity="0.6"/>
+  <ellipse cx="0" cy="-5" rx="5"  ry="6"  fill="#fff0a0" opacity="0.7"/>
+</g>
+<g class="lantern2" transform="translate(560,460)">
+  <ellipse cx="0" cy="0" rx="16" ry="16" fill="#ff8820" opacity="0.12" filter="url(#bigGlow)"/>
+  <rect x="-6" y="-12" width="12" height="16" fill="#ff9933" rx="3"/>
+  <ellipse cx="0" cy="-12" rx="7.5" ry="4.5" fill="#ffbb55"/>
+  <ellipse cx="0" cy="4"   rx="7.5" ry="4.5" fill="#e07722"/>
+  <ellipse cx="0" cy="-4"  rx="4"   ry="5"   fill="#fff0a0" opacity="0.7"/>
+</g>
+<g class="lantern3" transform="translate(680,450)">
+  <ellipse cx="0" cy="0" rx="18" ry="18" fill="#ff8820" opacity="0.1" filter="url(#bigGlow)"/>
+  <rect x="-5" y="-11" width="10" height="14" fill="#ff9933" rx="3"/>
+  <ellipse cx="0" cy="-11" rx="6.5" ry="4" fill="#ffbb55"/>
+  <ellipse cx="0" cy="3"   rx="6.5" ry="4" fill="#e07722"/>
+  <ellipse cx="0" cy="-3"  rx="3.5" ry="5" fill="#fff0a0" opacity="0.7"/>
+</g>
+
+<!-- ═════════ FIREFLIES ═════════ -->
+<g filter="url(#softGlow)">
+  <circle class="ff1" cx="280" cy="420" r="3" fill="#c0ff60"/>
+  <circle class="ff2" cx="520" cy="430" r="2.5" fill="#a0ff80"/>
+  <circle class="ff3" cx="150" cy="440" r="2" fill="#c0ff60"/>
+  <circle class="ff4" cx="660" cy="425" r="3" fill="#a0ff80"/>
+  <circle class="ff5" cx="780" cy="445" r="2.5" fill="#c0ff60"/>
+</g>
+<g opacity="0.3" filter="url(#bigGlow)">
+  <circle class="ff1" cx="280" cy="420" r="8"  fill="#c0ff60"/>
+  <circle class="ff2" cx="520" cy="430" r="7"  fill="#a0ff80"/>
+  <circle class="ff3" cx="150" cy="440" r="6"  fill="#c0ff60"/>
+  <circle class="ff4" cx="660" cy="425" r="8"  fill="#a0ff80"/>
+  <circle class="ff5" cx="780" cy="445" r="7"  fill="#c0ff60"/>
+</g>
+
+<!-- ═════════ GROUND COVER ═════════ -->
+<rect x="0" y="485" width="900" height="15" fill="#0d2015"/>
+<path d="M0,420 Q150,415 270,418 Q330,420 355,418 L355,430 Q330,432 270,430 Q150,428 0*433Z" fill="#1a3a20"/>
+<path d="M445,418 Q530,416 700,418 Q820,420 900,416 L900,433 Q820,432 700,431 Q530,430 445,432Z" fill="#1a3a20"/>
+
+<!-- ═════════ SCENE BORDER ot 4)Y)Y)Y)Y)Y)Y)Y)Y)Y����&V7B��#"��#"v�GF��#�"�V�v�C�#S"'��#B �f����&���R"7G&��S�"36C#c"7G&��R�v�GF��#2"�ࠣ��s���7fs
