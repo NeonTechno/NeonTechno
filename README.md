@@ -36,10 +36,8 @@ focus:
   - Post-quantum cryptography (CRYSTALS-Kyber / CRYSTALS-Dilithium)
   - Cosmos SDK blockchain architecture
   - Decentralized storage (OrbitDB / IPFS)
-goals:
+goal:
   - Launch DRP at testnet level
-  - TED Talk on air conditioners & their environmental effects
-  - Apply to Columbia University
 mission: "Fair resource distribution, ethical AI governance, and accessible
           systems — built and proven in Ghana, designed for the world."
 ```
