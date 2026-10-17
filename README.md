@@ -141,6 +141,7 @@ University of Cape Coast Robotics Team's 2025 season.
 <a href="mailto:joelcalebtech2018@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
 <a href="https://decentralizedrights.com"><img src="https://img.shields.io/badge/DRP-Website-2a9650?style=for-the-badge&logo=internetcomputer&logoColor=white"/></a>
 <a href="https://github.com/Decentralized-Rights-Protocol"><img src="https://img.shields.io/badge/DRP-GitHub_Org-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
+<a href="https://linktr.ee/NeonTechno" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Linktree-Connect-43E55E?style=for-the-badge&logo=linktree&logoColor=white" alt="Linktree — NeonTechno"/></a>
 
 </div>
 
