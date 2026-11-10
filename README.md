@@ -29,7 +29,7 @@
 name: Nkrumah Joel (NeonTechno)
 role: Founder & Lead Architect, Decentralized Rights Protocol (DRP)
 location: Cape Coast, Ghana 🇬🇭
-education: Computer Science, Level 300 — University of Cape Coast (UCC)
+education: Computer Science, Level 400 — University of Cape Coast (UCC)
 leads: Robotics UCC Team — Season 2025
 focus:
   - AI-powered rights-access scoring (UN SDG 10 & 16 alignment)
@@ -104,9 +104,9 @@ fair resource distribution aligned with **UN SDGs 10 & 16**.
 </td>
 <td width="50%" valign="top">
 
-### 🤖 Robotics UCC Team — Season 2025
+### 🤖 Robotics UCC Team — Season 2026
 Leading recruitment, build strategy, and team operations for the
-University of Cape Coast Robotics Team's 2025 season.
+University of Cape Coast Robotics Team's 2026 season.
 
 ### 🧠 AI & Tooling
 - `ai-orchestrator-agent` — LangGraph ReAct multi-agent system
