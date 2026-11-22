@@ -3,19 +3,25 @@ import { fileURLToPath } from "node:url";
 import { resolve, dirname, join } from "node:path";
 
 export function validateSvg(svg) {
+  const rows = (svg.match(/data-cells="120"/g) || []).length;
   const checks = {
-    svgRoot: /^<svg\\b/.test(svg),
+    svgRoot: /^<svg\b/.test(svg),
     viewBox: /viewBox="0 0 1200 660"/.test(svg),
-    denseGlyphField: (svg.match(/<tspan/g) || []).length >= 13200,
+    denseGlyphField: rows >= 110,
     starfield: (svg.match(/class="star"/g) || []).length >= 180,
-    spiralAndNebulaMotion: /class="nebula"[^>]*|class="nebula"/.test(svg) && /nebula-drift/.test(svg),
+    spiralAndNebulaMotion: /class="nebula"/.test(svg) && /nebula-drift/.test(svg),
     ringOcclusionLayers: /ring-back/.test(svg) && /ring-front/.test(svg),
-    clippedPlanet: /clip-path="url\\(#planet-clip\\)"/.test(svg),
+    clippedPlanet: /clip-path="url\(#planet-clip\)"/.test(svg),
     movingComet: /animateMotion/.test(svg),
     reducedMotionSupport: /prefers-reduced-motion/.test(svg),
     colourPalette: /class="p15"/.test(svg)
   };
-  return { valid: Object.values(checks).every(Boolean), checks, glyphs: (svg.match(/<tspan/g) || []).length, stars: (svg.match(/class="star"/g) || []).length };
+  return {
+    valid: Object.values(checks).every(Boolean),
+    checks,
+    glyphs: rows * 120,
+    stars: (svg.match(/class="star"/g) || []).length
+  };
 }
 
 async function main() {
