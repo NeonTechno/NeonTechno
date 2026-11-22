@@ -41,7 +41,7 @@ test("space sampler returns valid character samples across the scene", () => {
     for (let x = 0.05; x < 1; x += 0.1) {
       const sample = sampleScene(x, y, 4.2, 99);
       assert.ok(sample.glyph.length === 1);
-      assert.match(sample.color, /^(#|hsl\\()/);
+      assert.match(sample.color, /^(#|hsl)/);
       assert.ok(sample.intensity >= 0 && sample.intensity <= 1);
     }
   }
