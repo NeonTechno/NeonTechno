@@ -1,14 +1,18 @@
-name: Test and deploy ASCII space demo
+name: Validate and deploy SVG ASCII space
 
 on:
   pull_request:
     paths:
       - "space/**"
+      - "space-ascii.svg"
+      - "README.md"
       - ".github/workflows/deploy-space-demo.yml"
   push:
     branches: [main]
     paths:
       - "space/**"
+      - "space-ascii.svg"
+      - "README.md"
       - ".github/workflows/deploy-space-demo.yml"
   workflow_dispatch:
 
@@ -23,13 +27,11 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository
-        uses: actions/checkout@v4
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Run engine checks
+      - name: Validate SVG and tests
         working-directory: space
         run: |
           npm run check
@@ -47,14 +49,12 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Check out repository
-        uses: actions/checkout@v4
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@v5
-      - name: Upload space demo
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - name: Upload SVG preview
         uses: actions/upload-pages-artifact@v3
         with:
           path: space
-      - name: Deploy to GitHub Pages
+      - name: Deploy SVG preview
         id: deployment
         uses: actions/deploy-pages@v4
