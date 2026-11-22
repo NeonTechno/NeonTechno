@@ -25,25 +25,29 @@
 
 <div align="center">
 
-**COSMIC ASCII — DEEP FIELD / SVG CHARACTER ENGINE**
+**NATURE ASCII — MOONLIT RAINFOREST**
 
-<img src="./space-ascii.svg" width="100%" alt="Animated colourful ASCII galaxy with a spiral nebula, dense starfield, comet and ringed gas giant"/>
+<img src="./nature-ascii.svg" width="100%" alt="Layered animated ASCII rainforest with moonlit waterfall, dense canopy, vines, ferns, rocks, fireflies and wildlife"/>
 
-<sub>120 × 55 glyph matrix · Per-character colour · Procedural nebula and spiral arms · Layered ASCII planet and rings · Animated SVG</sub>
+<sub>Dense foliage glyph field · Waterfall spray and river glints · Foreground ferns and roots · Fireflies and winged wildlife · Animated mist</sub>
 
-[**Explore the Deep Field →**](https://neontechno.github.io/NeonTechno/)
+**COSMIC ASCII — DEEP FIELD**
 
-[SVG artwork, source & tests](./space/) · [Rendering documentation](./space/README.md)
+<img src="./space-ascii.svg" width="100%" alt="Animated colourful ASCII galaxy with turbulent nebula, spiral arms, stars, comet, ringed gas giant, distant moon and orbital satellite"/>
 
-**NEON DISTRICT — Cyber City After Dark**
+<sub>120 × 55 glyph matrix · Per-character colour · Turbulent nebula and spiral arms · Layered ringed planet · Distant moon, orbital satellite and animated starfield</sub>
 
-<img src="./cyber-city-ascii.svg" width="100%" alt="Animated colourful ASCII cyberpunk city"/>
+**NEON DISTRICT — CYBER CITY AFTER DARK**
 
-<sub>Rendered entirely with text characters · Colour-coded SVG · Animated effects</sub>
+<img src="./cyber-city-ascii.svg" width="100%" alt="Expanded animated ASCII cyberpunk city with layered neon buildings, illuminated windows, holographic signs, flying traffic and reflective expressway"/>
+
+<sub>Layered skyline and dense lit windows · Holographic billboards · Elevated transit and flying vehicles · Neon cables · Reflective street glyphs</sub>
+
+<sub>All three environments are native animated SVG artwork built from text glyphs — no raster scenes, Canvas or WebGL.</sub>
+
+[**Nature SVG**](./nature-ascii.svg) · [**Deep Field SVG**](./space-ascii.svg) · [**Neon District SVG**](./cyber-city-ascii.svg)
 
 </div>
-
-
 <br/>
 
 ## 🌍 About Me
