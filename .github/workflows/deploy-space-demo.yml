@@ -1,0 +1,60 @@
+name: Test and deploy ASCII space demo
+
+on:
+  pull_request:
+    paths:
+      - "space/**"
+      - ".github/workflows/deploy-space-demo.yml"
+  push:
+    branches: [main]
+    paths:
+      - "space/**"
+      - ".github/workflows/deploy-space-demo.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ascii-space-pages
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Run engine checks
+        working-directory: space
+        run: |
+          npm run check
+          npm test
+
+  deploy:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: test
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Upload space demo
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: space
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,10 @@
+{
+  "name": "neontechno-cosmic-ascii",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check engine.js"
+  }
+}
