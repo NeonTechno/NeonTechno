@@ -37,7 +37,7 @@
 
 ### 🚀 Explore the real-time ASCII space engine
 
-[**Launch the interactive cosmic ASCII experience →**](https://neonte chno.github.io/NeonTechno/space/)
+[**Launch the interactive cosmic ASCII experience →**](https://neontechno.github.io/NeonTechno/space/)
 
 A browser-based character renderer with a living nebula, spiral galaxy, ringed planet, starfield, comet trails, adjustable detail and motion controls. The profile artwork above remains a lightweight animated preview; the interactive engine runs in its own page.
 
