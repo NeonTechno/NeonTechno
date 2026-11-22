@@ -35,6 +35,14 @@
 
 <sub>Rendered entirely with text characters · Colour-coded SVG · Animated effects</sub>
 
+### 🚀 Explore the real-time ASCII space engine
+
+[**Launch the interactive cosmic ASCII experience →**](https://neonte chno.github.io/NeonTechno/space/)
+
+A browser-based character renderer with a living nebula, spiral galaxy, ringed planet, starfield, comet trails, adjustable detail and motion controls. The profile artwork above remains a lightweight animated preview; the interactive engine runs in its own page.
+
+[Engine source & tests](./space/) · [Rendering notes](./space/README.md)
+
 </div>
 
 
