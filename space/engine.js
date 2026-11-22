@@ -1,5 +1,5 @@
 const GLYPHS = " .,:;irsXA253hMHGS#9B&@";
-const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
+export const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
 
 export function smoothstep(edge0, edge1, value) {
   const t = clamp((value - edge0) / (edge1 - edge0), 0, 1);
