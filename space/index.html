@@ -3,38 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#050611">
-  <meta name="description" content="An interactive real-time space environment rendered entirely with colourful ASCII characters.">
-  <title>Cosmic ASCII Engine — NeonTechno</title>
+  <meta name="theme-color" content="#030712">
+  <meta name="description" content="A living deep-field galaxy rendered from coloured ASCII characters in animated SVG.">
+  <title>Deep Field — NeonTechno ASCII Cosmos</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <main class="experience">
-    <canvas id="space" role="img" aria-label="Animated deep-space scene rendered with coloured ASCII characters. A spiral nebula, stars, a ringed planet and a passing comet.">
-      Your browser does not support canvas. The space scene is an animated ASCII rendering.
-    </canvas>
-    <header class="hud hud-top">
-      <a class="brand" href="https://github.com/NeonTechno" aria-label="NeonTechno GitHub profile">NEONTECHNO<span>.EXE</span></a>
-      <div class="telemetry"><span class="live-dot"></span><span id="status">RENDERER ONLINE</span><span class="separator">/</span><span>ASCII SPACE SIMULATION</span></div>
-    </header>
-    <section class="scene-title" aria-hidden="true">
-      <p>SECTOR 07 · DEEP FIELD</p>
-      <h1>THE COSMIC<br><em>CHARACTER</em> ENGINE</h1>
-      <p class="subtitle">A universe drawn one character at a time.</p>
-    </section>
-    <footer class="hud hud-bottom">
-      <div class="readout"><span>COORDINATES</span><strong id="coordinates">X 042.8 / Y 018.3</strong></div>
-      <div class="readout"><span>RENDER MODE</span><strong>CHROMATIC ASCII · REAL TIME</strong></div>
-      <div class="controls" aria-label="Scene controls">
-        <label class="range-control" for="detail"><span>DETAIL</span><input id="detail" type="range" min="0.65" max="1.55" step="0.05" value="1" aria-label="ASCII detail level"></label>
-        <label class="range-control motion-control" for="motion"><span>MOTION</span><input id="motion" type="range" min="0" max="2" step="0.1" value="1" aria-label="Animation speed"></label>
-        <button id="pause" type="button" aria-pressed="false">Ⅱ PAUSE</button>
-        <button id="reroll" type="button">↻ NEW FIELD</button>
-        <button id="fullscreen" type="button" aria-label="Toggle fullscreen">⛶</button>
-      </div>
-    </footer>
-    <p class="mobile-hint">Tip: use the controls to change detail, motion and the star field.</p>
+  <main class="stage">
+    <header class="topline"><span>NEONTECHNO / EXPERIMENTAL WORLDS</span><span>01 — DEEP FIELD</span></header>
+    <figure class="universe"><img src="./space-ascii.svg" alt="Animated ASCII galaxy with a spiral nebula, starfield, comet and ringed gas giant"></figure>
+    <footer><span>120 × 55 CHARACTER FIELD</span><span>PURE SVG · NO CANVAS · NO RUNTIME DEPENDENCIES</span></footer>
   </main>
-  <script type="module" src="./engine.js"></script>
 </body>
 </html>
