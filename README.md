@@ -21,6 +21,23 @@
 
 </div>
 
+## 🌌 ASCII WORLDS
+
+<div align="center">
+
+**COSMIC ASCII — Deep Field Explorer**
+
+<img src="./space-ascii.svg" width="100%" alt="Animated colourful ASCII galaxy, nebula and ringed planet"/>
+
+**NEON DISTRICT — Cyber City After Dark**
+
+<img src="./cyber-city-ascii.svg" width="100%" alt="Animated colourful ASCII cyberpunk city"/>
+
+<sub>Rendered entirely with text characters · Colour-coded SVG · Animated effects</sub>
+
+</div>
+
+
 <br/>
 
 ## 🌍 About Me
