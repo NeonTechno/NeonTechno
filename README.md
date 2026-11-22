@@ -25,23 +25,21 @@
 
 <div align="center">
 
-**COSMIC ASCII — Deep Field Explorer**
+**COSMIC ASCII — DEEP FIELD / SVG CHARACTER ENGINE**
 
-<img src="./space-ascii.svg" width="100%" alt="Animated colourful ASCII galaxy, nebula and ringed planet"/>
+<img src="./space-ascii.svg" width="100%" alt="Animated colourful ASCII galaxy with a spiral nebula, dense starfield, comet and ringed gas giant"/>
+
+<sub>120 × 55 glyph matrix · Per-character colour · Procedural nebula and spiral arms · Layered ASCII planet and rings · Animated SVG</sub>
+
+[**Explore the Deep Field →**](https://neontechno.github.io/NeonTechno/)
+
+[SVG artwork, source & tests](./space/) · [Rendering documentation](./space/README.md)
 
 **NEON DISTRICT — Cyber City After Dark**
 
 <img src="./cyber-city-ascii.svg" width="100%" alt="Animated colourful ASCII cyberpunk city"/>
 
 <sub>Rendered entirely with text characters · Colour-coded SVG · Animated effects</sub>
-
-### 🚀 Explore the real-time ASCII space engine
-
-[**Launch the interactive cosmic ASCII experience →**](https://neontechno.github.io/NeonTechno/)
-
-A browser-based character renderer with a living nebula, spiral galaxy, ringed planet, starfield, comet trails, adjustable detail and motion controls. The profile artwork above remains a lightweight animated preview; the interactive engine runs in its own page.
-
-[Engine source & tests](./space/) · [Rendering notes](./space/README.md)
 
 </div>
 
