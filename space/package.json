@@ -1,7 +1,7 @@
 {
-  "name": "neontechno-cosmic-svg",
+  "name": "neontechno-profile-ascii-art",
   "private": true,
-  "version": "2.0.0",
+  "version": "3.0.0",
   "type": "module",
   "scripts": {
     "check": "node --check validate-svg.mjs && node validate-svg.mjs",
