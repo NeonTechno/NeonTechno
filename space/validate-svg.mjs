@@ -9,12 +9,12 @@ export async function validateProfileArt() {
   for (const file of files) {
     const svg = await readFile(join(root, file), "utf8");
     const checks = {
-      svgRoot: /^<svg\\b/.test(svg),
-      svgClosed: /<\\/svg>\\s*$/.test(svg),
+      svgRoot: /^<svg\b/.test(svg),
+      svgClosed: /<\/svg>\s*$/.test(svg),
       hasTextGlyphs: /<text[ >]/.test(svg),
       hasAnimation: /animation|<animate/i.test(svg),
-      noRasterImage: !/<image\\b/i.test(svg),
-      noCanvasOrScript: !/<(canvas|script)\\b/i.test(svg)
+      noRasterImage: !/<image\b/i.test(svg),
+      noCanvasOrScript: !/<(canvas|script)\b/i.test(svg)
     };
     if (file === "nature-ascii.svg") {
       checks.rainforestLayers = /canopy-drift/.test(svg) && /water-glint/.test(svg) && /ferns/.test(svg) && /wildlife/.test(svg);
