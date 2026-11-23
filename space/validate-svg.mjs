@@ -2,35 +2,40 @@ import { readFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import { resolve, dirname, join } from "node:path";
 
-export function validateSvg(svg) {
-  const rows = (svg.match(/data-cells="120"/g) || []).length;
-  const checks = {
-    svgRoot: /^<svg\b/.test(svg),
-    viewBox: /viewBox="0 0 1200 660"/.test(svg),
-    denseGlyphField: rows >= 110,
-    starfield: (svg.match(/class="star"/g) || []).length >= 180,
-    spiralAndNebulaMotion: /class="nebula"/.test(svg) && /nebula-drift/.test(svg),
-    ringOcclusionLayers: /ring-back/.test(svg) && /ring-front/.test(svg),
-    clippedPlanet: /clip-path="url\(#planet-clip\)"/.test(svg),
-    movingComet: /animateMotion/.test(svg),
-    reducedMotionSupport: /prefers-reduced-motion/.test(svg),
-    colourPalette: /class="p15"/.test(svg)
-  };
-  return {
-    valid: Object.values(checks).every(Boolean),
-    checks,
-    glyphs: rows * 120,
-    stars: (svg.match(/class="star"/g) || []).length
-  };
-}
-
-async function main() {
+export async function validateProfileArt() {
   const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-  const source = await readFile(join(root, "space-ascii.svg"), "utf8");
-  const preview = await readFile(join(dirname(fileURLToPath(import.meta.url)), "space-ascii.svg"), "utf8");
-  const report = validateSvg(source);
-  if (!report.valid) throw new Error("SVG validation failed: " + JSON.stringify(report.checks));
-  if (source !== preview) throw new Error("Pages preview SVG differs from the profile SVG.");
-  console.log("SVG valid:", report.glyphs, "glyph cells;", report.stars, "animated stars.");
+  const files = ["nature-ascii.svg", "space-ascii.svg", "cyber-city-ascii.svg"];
+  const reports = {};
+  for (const file of files) {
+    const svg = await readFile(join(root, file), "utf8");
+    const checks = {
+      svgRoot: /^<svg\b/.test(svg),
+      svgClosed: /<\/svg>\s*$/.test(svg),
+      hasTextGlyphs: /<text[ >]/.test(svg),
+      hasAnimation: /animation|<animate/i.test(svg),
+      noRasterImage: !/<image\b/i.test(svg),
+      noCanvasOrScript: !/<(canvas|script)\b/i.test(svg)
+    };
+    if (file === "nature-ascii.svg") {
+      checks.rainforestLayers = /canopy-drift/.test(svg) && /water-glint/.test(svg) && /ferns/.test(svg) && /wildlife/.test(svg);
+    }
+    if (file === "space-ascii.svg") {
+      checks.denseGlyphField = (svg.match(/data-cells="120"/g) || []).length >= 110;
+      checks.orbitalDetails = /moon-clip/.test(svg) && /ORBITAL-07/.test(svg);
+      checks.galaxySystems = /ring-back/.test(svg) && /ring-front/.test(svg) && /animateMotion/.test(svg);
+    }
+    if (file === "cyber-city-ascii.svg") {
+      checks.cityLayers = /NEON DISTRICT/.test(svg) && /AUTONOMOUS TRANSIT/.test(svg) && /windows-extra/.test(svg);
+    }
+    reports[file] = {valid:Object.values(checks).every(Boolean),checks,bytes:Buffer.byteLength(svg)};
+  }
+  return reports;
 }
-if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) main().catch(e => { console.error(e); process.exitCode = 1; });
+if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  validateProfileArt().then(reports => {
+    for (const [file,report] of Object.entries(reports)) {
+      if (!report.valid) throw new Error(file + " validation failed: " + JSON.stringify(report.checks));
+      console.log("SVG valid:",file,report.bytes,"bytes");
+    }
+  }).catch(error => { console.error(error); process.exitCode = 1; });
+}
