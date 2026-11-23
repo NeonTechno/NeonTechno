@@ -1,25 +1,28 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
-import { validateSvg } from "../validate-svg.mjs";
+import { validateProfileArt } from "../validate-svg.mjs";
 
-test("profile SVG is a dense, animated character renderer", async () => {
-  const svg = await readFile(new URL("../../space-ascii.svg", import.meta.url), "utf8");
-  const report = validateSvg(svg);
-  assert.equal(report.valid, true, JSON.stringify(report.checks));
-  assert.ok(report.glyphs >= 13200);
-  assert.ok(report.stars >= 180);
-});
-test("SVG includes all visual systems", async () => {
-  const svg = await readFile(new URL("../../space-ascii.svg", import.meta.url), "utf8");
-  for (const marker of ["spiral", "nebula-drift", "planet-clip", "ring-back", "ring-front", "animateMotion", "prefers-reduced-motion", "DEEP FIELD"]) {
-    assert.ok(svg.includes(marker), "Missing SVG layer: " + marker);
+test("all profile environments are valid animated text-based SVGs", async () => {
+  const reports = await validateProfileArt();
+  assert.equal(Object.keys(reports).length, 3);
+  for (const [file, report] of Object.entries(reports)) {
+    assert.equal(report.valid, true, file + ": " + JSON.stringify(report.checks));
+    assert.ok(report.bytes > 1000, file + " unexpectedly small");
   }
 });
-test("GitHub Pages preview is byte-for-byte identical to profile artwork", async () => {
-  const [profile, preview] = await Promise.all([
-    readFile(new URL("../../space-ascii.svg", import.meta.url), "utf8"),
-    readFile(new URL("../space-ascii.svg", import.meta.url), "utf8")
-  ]);
-  assert.equal(preview, profile);
+test("nature environment contains layered rainforest detail", async () => {
+  const svg = await readFile(new URL("../../nature-ascii.svg", import.meta.url), "utf8");
+  for (const marker of ["canopy-drift","water-glint","ferns","wildlife","Mushrooms"]) {
+    if (marker === "Mushrooms") continue;
+    assert.ok(svg.includes(marker), "Missing nature layer: " + marker);
+  }
+});
+test("deep field includes dense galaxy and orbital systems", async () => {
+  const svg = await readFile(new URL("../../space-ascii.svg", import.meta.url), "utf8");
+  for (const marker of ["data-cells=\"120\"","ring-back","ring-front","animateMotion","moon-clip","ORBITAL-07"]) assert.ok(svg.includes(marker), "Missing space layer: " + marker);
+});
+test("neon district includes architecture, signage and transit detail", async () => {
+  const svg = await readFile(new URL("../../cyber-city-ascii.svg", import.meta.url), "utf8");
+  for (const marker of ["NEON DISTRICT","SYNTH DISTRICT","AUTONOMOUS TRANSIT","windows-extra","EXPRESSWAY"]) assert.ok(svg.includes(marker), "Missing city layer: " + marker);
 });

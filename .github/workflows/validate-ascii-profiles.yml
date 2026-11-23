@@ -1,0 +1,38 @@
+name: Validate profile ASCII environments
+
+on:
+  pull_request:
+    paths:
+      - "README.md"
+      - "nature-ascii.svg"
+      - "space-ascii.svg"
+      - "cyber-city-ascii.svg"
+      - "space/**"
+      - ".github/workflows/validate-ascii-profiles.yml"
+  push:
+    branches: [main]
+    paths:
+      - "README.md"
+      - "nature-ascii.svg"
+      - "space-ascii.svg"
+      - "cyber-city-ascii.svg"
+      - "space/**"
+      - ".github/workflows/validate-ascii-profiles.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Validate profile SVG artwork
+        working-directory: space
+        run: |
+          npm run check
+          npm test
