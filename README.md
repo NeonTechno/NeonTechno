@@ -11,7 +11,7 @@
 
 <img src="https://readme-typing-svg.demolab.com?font=Cinzel+Decorative&weight=900&size=46&duration=3000&pause=99999&color=FFD700&center=true&vCenter=true&repeat=false&width=820&height=80&lines=NeonTechnoX" alt="NeonTechnoX"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&duration=2600&pause=900&color=6EE7B7&center=true&vCenter=true&multiline=true&width=760&height=70&lines=Founder+%26+Lead+Architect+%E2%80%94+Decentralized+Rights+Protocol+(DRP);AI-powered+rights-access+scoring+%C3%97+post-quantum+crypto+%C3%97+Cosmos+SDK;CS+Student+(Level+300)+%40+University+of+Cape+Coast%2C+Ghana+%F0%9F%87%AC%F0%9F%87%AD" alt="typing"/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&duration=2600&pause=900&color=6EE7B7&center=true&vCenter=true&multiline=true&width=760&height=70&lines=Founder+%26+Lead+Architect+%E2%80%94+Decentralized+Rights+Protocol+(DRP);AI-powered+rights-access+scoring+%C3%97+post-quantum+crypto+%C3%97+Cosmos+SDK;" alt="typing"/>
 
 <br/>
 
@@ -21,33 +21,12 @@
 
 </div>
 
-## 🌌 ASCII WORLDS
 
-<div align="center">
 
-**NATURE ASCII — MOONLIT RAINFOREST**
 
-<img src="./nature-ascii.svg" width="100%" alt="Layered animated ASCII rainforest with moonlit waterfall, dense canopy, vines, ferns, rocks, fireflies and wildlife"/>
 
-<sub>Dense foliage glyph field · Waterfall spray and river glints · Foreground ferns and roots · Fireflies and winged wildlife · Animated mist</sub>
 
-**COSMIC ASCII — DEEP FIELD**
 
-<img src="./space-ascii.svg" width="100%" alt="Animated colourful ASCII galaxy with turbulent nebula, spiral arms, stars, comet, ringed gas giant, distant moon and orbital satellite"/>
-
-<sub>120 × 55 glyph matrix · Per-character colour · Turbulent nebula and spiral arms · Layered ringed planet · Distant moon, orbital satellite and animated starfield</sub>
-
-**NEON DISTRICT — CYBER CITY AFTER DARK**
-
-<img src="./cyber-city-ascii.svg" width="100%" alt="Expanded animated ASCII cyberpunk city with layered neon buildings, illuminated windows, holographic signs, flying traffic and reflective expressway"/>
-
-<sub>Layered skyline and dense lit windows · Holographic billboards · Elevated transit and flying vehicles · Neon cables · Reflective street glyphs</sub>
-
-<sub>All three environments are native animated SVG artwork built from text glyphs — no raster scenes, Canvas or WebGL.</sub>
-
-[**Nature SVG**](./nature-ascii.svg) · [**Deep Field SVG**](./space-ascii.svg) · [**Neon District SVG**](./cyber-city-ascii.svg)
-
-</div>
 <br/>
 
 ## 🌍 About Me
@@ -111,6 +90,11 @@ mission: "Fair resource distribution, ethical AI governance, and accessible
 </div>
 
 <br/>
+
+
+<img src="./space-ascii.svg" width="100%" alt="Animated colourful ASCII galaxy with turbulent nebula, spiral arms, stars, comet, ringed gas giant, distant moon and orbital satellite"/>
+
+<sub>120 × 55 glyph matrix · Per-character colour · Turbulent nebula and spiral arms · Layered ringed planet · Distant moon, orbital satellite and animated starfield</sub>
 
 ## 🚀 Currently Building
 
